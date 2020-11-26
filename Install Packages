@@ -1,0 +1,30 @@
+To install packages (Wikipedia, Speech_Recognition, Pyttsx3)
+
+Open Command Prompt or windows powershell if your in windows .....
+
+and write:--
+
+pip install Wikipedia
+
+and hit enter....
+
+To download Speech_Recognition
+
+write...
+
+pip install speechRecognition
+
+and hit enter......
+
+To install pyttsx3
+
+write....
+
+pip install pyttsx3
+
+and hit enter....
+
+
+
+
+Thanku!
