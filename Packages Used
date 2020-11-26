@@ -1,0 +1,9 @@
+The packages used in this program are--: 
+{
+Wikipedia(External)
+Pyttsx3(External)
+Datetime(Internal)
+OS(Internal)
+Webbrowser(Internal)
+Speech_Recognition(External)
+}
