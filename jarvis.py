@@ -5,6 +5,8 @@ import datetime
 import wikipedia
 import webbrowser
 import os
+import time
+import pyautogui
 
 converter = pyttsx3.init() 
 engine = pyttsx3.init('sapi5')
@@ -76,11 +78,6 @@ if __name__ == "__main__":
             speak(f"Opening youtube")
             print(f"Opening youtube")
             webbrowser.open("www.youtube.com")
-
-        elif 'open google' in query:
-            speak(f"Opening google")
-            print(f"Opening google")
-            webbrowser.open("www.google.com")
 
         elif 'open snap homework' in query:
             speak(f"Opening snap homework")
@@ -192,3 +189,18 @@ if __name__ == "__main__":
             print("Opening paint")
             msPath = "C:\\Windows\\system32\\mspaint.exe"
             os.startfile(msPath)
+            
+        elif 'google' in query:
+            speak("What do u want to search??")
+            a = input("What do u want to search:\n")
+            time.sleep(3)
+            webbrowser.open("https://google.com")
+            x = 495
+            y = 370
+            pyautogui.moveTo(x, y, duration=1)
+            time.sleep(2)
+            pyautogui.click(x, y)
+            speak(f"Writing {a} in google")
+            time.sleep(1)
+            pyautogui.write(a, interval=0.4)
+            pyautogui.keyDown("enter")
